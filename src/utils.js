@@ -1,7 +1,4 @@
-//   ATTENTION!!!!!!!!!!!
-//   I SWITCHED TO PERMANENT DOMAIN
-//   DATA IS THE SAME JUST A DIFFERENT URL,
-//   DOES NOT AFFECT PROJECT FUNCTIONALITY
+
 
 const allProductsUrl = 'https://course-api.com/javascript-store-products'
 // temporary single product
@@ -18,7 +15,7 @@ const getElement = (selection) => {
 const formatPrice = (price) => {
   let formattedPrice = new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'ZAR',
   }).format((price / 100).toFixed(2))
   return formattedPrice
 }

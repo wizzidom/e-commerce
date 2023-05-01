@@ -19,3 +19,17 @@ const init = async () => {
 }
 
 window.addEventListener('DOMContentLoaded', init)
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll',() => {
+    console.log(scrollY )
+    if(scrollY>=270){
+        navbar.classList.add('bg')
+    }
+    else {
+        navbar.classList.remove('bg')
+    }
+}
+
+)

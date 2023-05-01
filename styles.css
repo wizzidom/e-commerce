@@ -184,6 +184,13 @@ Navbar
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top :0;
+  z-index: 9;
+  transition: ease;
+}
+.navbar.bg {
+  background: black;
 }
 
 .nav-center {
@@ -238,6 +245,20 @@ Navbar
   font-weight: bold;
   font-size: 1rem;
 }
+@media screen and (max-width: 799px) {
+
+   .nav-center {
+    position: relative;
+  }
+  .nav-logo {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+
+}
 @media screen and (min-width: 800px) {
   .nav-center {
     position: relative;
@@ -247,7 +268,10 @@ Navbar
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
+    width: 20%;
+    
   }
+
   .toggle-nav {
     display: none;
   }
@@ -291,7 +315,7 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/main-bcg.jpeg) center/cover;
+    url(./images/header.png) center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);
@@ -494,7 +518,7 @@ Cart
 .cart-item-remove-btn {
   background: transparent;
   border-color: transparent;
-  color: var(--clr-grey-5);
+  color: var(red);
   letter-spacing: var(--spacing);
   cursor: pointer;
 }
