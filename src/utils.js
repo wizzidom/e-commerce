@@ -1,11 +1,8 @@
 
+const shopItemsData = [];
 
-const allProductsUrl = 'https://course-api.com/javascript-store-products'
-// temporary single product
-// 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog'
-const singleProductUrl =
-  'https://course-api.com/javascript-store-single-product'
-
+const allProductsUrl = 'https://wizzidom.github.io/data/';
+const singleProductUrl= '';
 const getElement = (selection) => {
   const element = document.querySelector(selection)
   if (element) return element
@@ -41,4 +38,5 @@ export {
   formatPrice,
   getStorageItem,
   setStorageItem,
+  shopItemsData,
 }
